@@ -226,7 +226,7 @@ const shopifyStore = (props) => {
                     <p className="text-xl font-medium my-8 sm:pr-12">
                         {props.thirdContentList[0].text}
                     </p>
-                    <ul className="text-xl font-bold pb-10">
+                    <ul className="text-xl font-bold">
                         <li className="flex gap-5 py-[6px] px-[10px]">
                             <span className="w-[27px]">
                                 <TickIcon />
@@ -261,7 +261,7 @@ const shopifyStore = (props) => {
                 </span>
             </div>
 
-            <div className="slider py-20">
+            <div className="slider">
                 <div className="mt-10 sm:mx-auto flex items-end justify-center gap-4 overflow-hidden">
                     <button
                         onClick={prevSlide}

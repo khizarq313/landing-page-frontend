@@ -201,7 +201,7 @@ const Home = (props) => {
                 </div>
             </div>
 
-            <div className="second-content py-[120px] flex flex-col items-center sm:text-center">
+            <div className="second-content py-20 flex flex-col items-center sm:text-center">
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-[-0.96px] leading-[120%] xl:mx-[200px] px-8 sm:px-16 lg:px-20 mb-8">
                     {props.secondContentList[0].heading}
                 </h1>
@@ -218,7 +218,7 @@ const Home = (props) => {
                     </button>
                     <div
                         style={{
-                            width: visibleImagesCount * imageWidth,
+                            width: visibleImagesCount * imageWidth - 16,
                             overflow: "hidden",
                         }}
                         className="flex  justify-center items-center"
@@ -282,7 +282,7 @@ const Home = (props) => {
                 </div>
             </div>
 
-            <div className="third-content sm:px-16 lg:px-0 py-[80px]">
+            <div className="third-content sm:px-16 lg:px-0 py-0 lg:py-20">
                 <h1 className="text-3xl md:text-4xl lg:text-5xl sm:text-center font-bold tracking-[-0.96px] leading-[120%] px-8 sm:px-16 lg:px-20 2xl:px-[250px]">
                     {props.thirdContentList[0].heading}
                 </h1>
@@ -367,7 +367,7 @@ const Home = (props) => {
                 )}
             </div>
 
-            <div className="forth-content px-8 lg:px-[96px] py-[117px]">
+            <div className="forth-content px-8 lg:px-[96px] py-20">
                 <h1 className="text-3xl md:text-4xl lg:text-5xl sm:text-center font-bold tracking-[-0.96px] leading-[120%]">
                     {props.forthContentList[0].heading}
                 </h1>
