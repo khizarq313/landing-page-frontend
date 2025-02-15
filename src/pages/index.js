@@ -436,7 +436,7 @@ const Home = (props) => {
 
 export async function getServerSideProps() {
     let res = await fetch(
-        "https://landing-page-backend-0c0j.onrender.com/api/homepage-content-lists?populate[firstContentList][populate]=homeBanner&populate[firstContentList][populate]=mobileHomeBanner&populate[sliderList][populate]=slidingImages&populate[secondContentList][populate]=sliderImages&populate[thirdContentList][populate][card][populate]=image&populate[forthContentList][populate]=images&populate[fifthContentList]=*"
+        "https://landing-page-backend-6gwm.onrender.com/api/homepage-content-lists?populate[firstContentList][populate]=homeBanner&populate[firstContentList][populate]=mobileHomeBanner&populate[sliderList][populate]=slidingImages&populate[secondContentList][populate]=sliderImages&populate[thirdContentList][populate][card][populate]=image&populate[forthContentList][populate]=images&populate[fifthContentList]=*"
     );
     let response = await res.json();
     let homePageData = response.data[0];

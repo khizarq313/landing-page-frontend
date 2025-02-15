@@ -464,7 +464,7 @@ const shopifyStore = (props) => {
 
 export async function getServerSideProps() {
     let res = await fetch(
-        "https://landing-page-backend-0c0j.onrender.com/api/shopify-store-page-all-data?populate[firstContentList][populate]=image&populate[secondContentList][populate][shopifyCard][populate]=image&populate[thirdContentList][populate]=image&populate[sliderList][populate]=sliderImages&populate[forthContentList][populate]=image&populate[fifthContentList][populate]=smallCard&populate[sixthContentList][populate]=smallList"
+        "https://landing-page-backend-6gwm.onrender.com/api/shopify-store-page-all-data?populate[firstContentList][populate]=image&populate[secondContentList][populate][shopifyCard][populate]=image&populate[thirdContentList][populate]=image&populate[sliderList][populate]=sliderImages&populate[forthContentList][populate]=image&populate[fifthContentList][populate]=smallCard&populate[sixthContentList][populate]=smallList"
     );
     let response = await res.json();
     let shopifyStorePageData = response.data[0];

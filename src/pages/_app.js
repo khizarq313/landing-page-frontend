@@ -53,10 +53,10 @@ function MyApp({ Component, pageProps, navbarPageData, footerPageData }) {
 }
 
 MyApp.getInitialProps = async ({ ctx }) => {
-    let navbarRes = await fetch("https://landing-page-backend-0c0j.onrender.com/api/navbar-content-lists?populate=*");
+    let navbarRes = await fetch("https://landing-page-backend-6gwm.onrender.com/api/navbar-content-lists?populate=*");
     let navbarResponse = await navbarRes.json();
     let navbarPageData = navbarResponse.data[0];
-    let footerRes = await fetch("https://landing-page-backend-0c0j.onrender.com/api/footer-content-lists?populate=*");
+    let footerRes = await fetch("https://landing-page-backend-6gwm.onrender.com/api/footer-content-lists?populate=*");
     let footerResponse = await footerRes.json();
     let footerPageData = footerResponse.data[0];
   return { navbarPageData, footerPageData };
