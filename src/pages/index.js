@@ -163,7 +163,7 @@ const Home = (props) => {
             </div>
 
             <div className="slider mt-16 border-t border-b border-customLavenderOne pb-7">
-                <span className="inline-flex px-2 bg-white translate-x-20 -translate-y-4 items-center">
+                <span className="inline-flex px-2 bg-white translate-x-4 sm:translate-x-20 -translate-y-4 items-center">
                     <StarIcon />
                     <StarIcon />
                     <StarIcon />
